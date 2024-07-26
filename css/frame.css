@@ -10,7 +10,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: rgb(247, 221, 183);
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
@@ -48,7 +48,7 @@ video {
 
 h1 {
   font-size: 30px;
-  color: #333333;
+  color: #a85201;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -57,7 +57,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #333333;
+  color: #9e2a0d;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -66,7 +66,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: #333333;
+  color: #b86200;
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -85,8 +85,8 @@ li ul {
 
 hr {
   border: 0;
-  height: 1px;
-  background: rgb(220, 220, 220);
+  height: 2px;
+  background: rgb(107, 58, 3);
   margin: 0 0 10px 0;
 }
 
@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color: #a05d1f;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -220,7 +220,7 @@ hr {
 .menu .menu-items .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #0ace4b;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -240,7 +240,7 @@ hr {
 }
 
 .menu .menu-items .dropdown .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #d41b68;
   color: black;
 }
 
@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  background-color: #a05d1f;
   display: flex;
 }
 

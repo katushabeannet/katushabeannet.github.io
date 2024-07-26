@@ -110,6 +110,21 @@ hr {
   margin: 0 auto;
   max-width: 900px;
 }
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between the image and text */
+}
+
+.logo span {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+}
+
 
 .menu .menu-table {
   padding: 0px 10px;
@@ -463,18 +478,50 @@ hr {
   margin-right: auto;
 }
 
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line if they exceed the container width */
+  gap: 15px; /* Adds space between images */
+  justify-content: space-between; /* Ensures images are evenly spaced */
+}
+
 .image {
   border-radius: 2px;
   width: 100%;
-  margin: 15px 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: flex;
 }
+
+.image-container .image {
+  width: calc(33.333% - 10px); /* Three images/videos per row */
+  height: 200px; /* Set a fixed height for uniformity */
+  margin: 15px 0; /* Adjust margin as needed */
+  object-fit: cover; /* Ensures media covers the given width and height */
+}
+
+
+.banner {
+  position: relative;
+  height: 500px;
+  width: 100%; /* Ensure the banner takes the full width of the container */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensures the video stays behind any content within the .banner div */
+}
+
 
 .image.center {
   align-self: center;

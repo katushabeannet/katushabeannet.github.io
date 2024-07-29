@@ -307,13 +307,14 @@ hr {
 
 .banner {
   position: relative;
-  font-size: 16px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
-  line-height: 1.5;
+  line-height:1 ;
   overflow-x: auto;
   background-color: #a05d1f;
   display: flex;
+  
 }
 
 .banner .banner-table {

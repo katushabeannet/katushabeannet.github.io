@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cards Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="headings.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo3.png" alt="Logo">
+            <span>GLAMAZON</span>
+        </div>
+        <div class="navbar-home">
+            <a href="index.html">
+                <img src="images/home-icon.png" alt="Home">
+            </a>
+        </div>
+    </nav>
+    <div class="content">
+        <h2 id="company-profile">Company Profile</h2>
+        <hr>
+        <main>
+            <section class="about">
+              <h1>About Glamazon</h1>
+              <p>Welcome to Glamazon, your premier destination for all salon services. From hairstyling and haircuts to spa treatments, nails, tattoos, and piercings, we offer a wide range of services to cater to your beauty needs.</p>
+              <p>At Glamazon, we believe that everyone deserves to look and feel their best. Our platform connects you with the finest salons in your area, offering a wide range of beauty services to cater to your every need. Whether you're looking for a fresh haircut, a relaxing spa day, or a bold new tattoo, Glamazon is here to help you book the perfect appointment with ease.</p>
+              <p>Explore our curated selection of top-rated salons, discover the services they offer, and book your appointment in just a few clicks. With Glamazon, you can trust that you're in good hands, as we partner only with the best in the beauty industry.</p>
+              <p>Thank you for choosing Glamazon. We look forward to helping you shine!</p>
+        
+              <h2>Our Mission</h2>
+              <p>Our mission is to provide a seamless and enjoyable booking experience for salon services. We aim to connect our users with the best salons in their area, offering a variety of services and ensuring the highest quality and satisfaction.</p>
+        
+          </main>
+        <div class="spacer"></div>
+        
+        <div class="spacer"></div>
+        
+        <h2 id="the-team">The Team</h2>
+        <hr>
+        <!-- Content for The Team -->
+        <div class="container">
+            <div class="row middle">
+                <div class="card">
+                    <img src="images/ketra.jpg" alt="Image 1">
+                    <div class="label">Nuwarinda Albert</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="images/ketra.jpg" alt="Image 2">
+                    <div class="label">Katushabe Annet</div>
+                </div>
+                <div class="card">
+                    <img src="images/ketra.jpg" alt="Image 3">
+                    <div class="label">Nalunkuma Ketra</div>
+                </div>
+                <div class="card">
+                    <img src="images/ketra.jpg" alt="Image 4">
+                    <div class="label">Image 4</div>
+                </div>
+                <div class="card">
+                    <img src="images/ketra.jpg" alt="Image 5">
+                    <div class="label">Image 5</div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        
+        <div class="spacer"></div>
+    
+        
+        <h2 id="contact-us">Contact Us</h2>
+        <hr>
+        <main>
+            <section class="contact">
+              <h1>Contact Us</h1>
+              <p>We'd love to hear from you! Whether you have a question, feedback, or need support, feel free to reach out to us using the contact information below or by filling out the form.</p>
+              
+              <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 Beauty Lane, Glam City, GC 45678</p>
+                <p><strong>Phone:</strong> 0756197795</p>
+                <p><strong>Phone:</strong>0789347312</p>
+                <p><strong>Phone:</strong> 0768676813</p>
+                <p><strong>Email:</strong> <a href="mailto:support@glamazon.com">support@glamazon.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@glamazon.com">info@glamazon.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:contact@glamazon.com">contact@glamazon.com</a></p>
+                <p><strong>Business Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+              </div>
+              
+              <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                  
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+            </section>
+          </main>
+        <div class="spacer"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 GLAMAZON. All rights reserved.</p>
+    </footer>
+</body>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #d9c1bb;
+        min-height: 100vh;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #785a38;
+        color: white;
+    }
+
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-logo img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .navbar-home a img {
+        height: 40px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .middle {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        overflow: hidden;
+        width: 200px;
+        text-align: center;
+        height: 300px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 265px;
+        object-fit: cover;
+    }
+
+    .label {
+        padding: 10px;
+        background: #ffffff;
+        border-top: 1px solid #ddd;
+    }
+
+    footer {
+        background-color: #785a38;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .spacer {
+        height: 100px; /* Adjust this value as needed for spacing */
+    }
+
+    .image-section {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .down-arrow {
+        margin-top: 20px;
+        font-size: 24px;
+        animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .menu-section {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px;
+        background-color: #785a38;
+    }
+
+    .menu-section a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .menu-section a:hover {
+        text-decoration: underline;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    hr {
+        border: 0;
+        height: 2px;
+        background: #785a38;
+        margin: 10px 0;
+    }
+</style>
+</html>
